@@ -53,12 +53,12 @@ const [currentTaskIndex, setCurrentTaskIndex] = useState(null);
   }
   return (
     <div className="bg-custom-image bg-cover bg-center h-screen flex flex-col items-center ">
-      <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg w-11/12 max-w-md mt-6">
+      <div className="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg w-11/12 max-w-md mt-6">
         <h1 className="font-bold text-5xl text-gray-800 mb-8 text-center">To Do List</h1>
         <form onSubmit={handleClick} className="flex flex-col mb-8">
           <input
             type="text"
-            placeholder="Write your Task"
+            placeholder="Add your Task"
             value={task}
             onChange={(e) => setTask(e.target.value)}
             className="p-4 mb-4 rounded-lg shadow-sm border border-gray-300 focus:ring-2 focus:ring-indigo-500"
